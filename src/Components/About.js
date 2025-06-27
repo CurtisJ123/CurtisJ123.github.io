@@ -1,57 +1,75 @@
-import React from 'react';
-import Skills from './Skills.js';
-import Tilt from 'react-parallax-tilt';
-import Lottie from "lottie-react"
-import Coder from '../LottieFiles/coder.json';
+import React from "react";
+import Skills from "./Skills.js";
+import Tilt from "react-parallax-tilt";
+import Lottie from "lottie-react";
+import Coder from "../LottieFiles/coder.json";
 
 const About = () => {
   return (
     <>
-      <div className='AboutPage'>
-        <div className='AboutText'>
-          <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
+      <div className="AboutPage">
+        <div className="AboutText">
+          <h1 className="AboutTextHeading">
+            Get to <b>know</b> me!
+          </h1>
           <p>
-            Hi, my name is <b>Devansh Sahni</b> and I am from New Delhi, India.
-            I'm a <b>MERN stack web developer</b> and a final year college student pursuing <b>BTech in CSE</b>. <br/><br/>
-            I have done an internship as a <b>software developer</b> at GoalFi which is a fintech startup.
-            I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding I love to do photography, you can check out some of my shots here <a href="https://www.instagram.com/devansh_sahni_/?hl=en" target='_blank'>Instagram.</a>
+            Hi, my name is <b>Curtis Jones</b>, and I'm from{" "}
+            <b>Cincinnati, Ohio</b>. I'm a <b>Sofware Developer</b> with a
+            passion for solving problems, building useful software, and
+            constantly learning new technologies.
+            <br />
+            <br />
+            I'm currently pursuing a{" "}
+            <b>Master of Science in Computer Science</b> with a focus in Machine
+            Learning at Georgia Tech (expected May 2027) and recently completed
+            a <b>Bachelor of Science in Computer Science</b> at Western
+            Governors University.
+            <br />
+            <br />
+            I’ve built several projects, including a job tracking app, a file
+            system visualizer, and a Discord bot. I love exploring new tech
+            stacks and have experience in everything from <b>
+              React and Node
+            </b>{" "}
+            to <b>C++, C#, and Python</b>.
+            <br />
+            <br />
+            I’m always <b>open</b> to collaboration, freelance work, or new
+            opportunities where I can grow and contribute. Feel free to reach
+            out — my contact info is in the footer!
           </p>
         </div>
 
         <div>
           <Tilt>
-              <Lottie 
-              className="illustration" 
-              animationData={Coder} 
-              loop={true} 
+            <Lottie
+              className="illustration"
+              animationData={Coder}
+              loop={true}
             />
           </Tilt>
         </div>
-
       </div>
-      
-      <h1 className='SkillsHeading'>Professional Skillset</h1>
-      <div className='skills'>
-        
-        <Skills skill='React' />
-        <Skills skill='Node' />
-        <Skills skill='Express' />
-        <Skills skill='MongoDb' />
-        <Skills skill='Git' />
-        <Skills skill='Github' />
-        <Skills skill='Javascript' />
-        <Skills skill='C++' />
-        <Skills skill='Postman' />
-        <Skills skill='Figma' />
-        <Skills skill='Vercel' />
-        <Skills skill='Npm' />
-        <Skills skill='Bootstrap'/>
-        
+
+      <h1 className="SkillsHeading">Professional Skillset</h1>
+      <div className="skills">
+        <Skills skill="C#" />
+        <Skills skill="Java" />
+        <Skills skill="C++" />
+        <Skills skill="Python" />
+        <Skills skill="React" />
+        <Skills skill="Node" />
+        <Skills skill="Express" />
+        <Skills skill="Javascript" />
+        <Skills skill="Git" />
+        <Skills skill="Github" />
+        <Skills skill="Npm" />
+        <Skills skill="PostgreSQL" />
+        <Skills skill="MySQL" />
+        <Skills skill="MongoDb" />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
